@@ -3,7 +3,6 @@ import { nanoid } from "nanoid";
 import path from "path";
 
 const contactsPath = path.resolve("db", "contacts.json");
-//console.log(contactsPath);
 
 const updateContacts = (contacts) =>
   fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
